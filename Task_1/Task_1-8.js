@@ -32,4 +32,6 @@ let arrNum = [1.456, 2.125, 3.32, 4.1, 5.34]
 
 const arrNew = arrNum.map(num => num.toFixed(1));
 
-console.log(arrNew)
+// console.log(arrNew)
+
+
