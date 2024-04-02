@@ -69,5 +69,13 @@ console.log(result);
     'Aaa Bbb Ccc'*/
 
 let strWord = 'aaa bbb ccc';
-let strWordArr = strWord.split(' ');
-console.log(strWordArr)
+let words = strWord.split(' ');
+
+for (let i = 0; i < words.length; i++) {
+    let word = words[i];
+    words[i] = word.charAt(0).toUpperCase() + word.slice(1);
+}
+
+let strWordUpper = words.join(' ');
+
+console.log(strWordUpper)
