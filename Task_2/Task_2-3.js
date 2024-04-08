@@ -7,14 +7,10 @@ function compareLetter (word1, word2) {
     let lastLetterWord = word1[word1.length -1];
     let firstLetterWord = word2[0];
 
-    if (lastLetterWord === firstLetterWord) {
-        return true
-    } else {
-        return false
-    }
+    return lastLetterWord === firstLetterWord;
 }
 
-console.log(result);
+// console.log(result);
 
 
 
@@ -23,7 +19,20 @@ console.log(result);
 
 let str = '101011101001'
 
+let count = 0;
+let index;
 
+for ( i = 0; i < str.length; i++) {
+    if (str[i] === '0') {
+        count++;
+        if (count === 3) {
+            index = i;
+            break;
+        }
+    }
+}
+
+console.log(index)
 // Задача 2.3.3;
 /*
 Даны числа, разделенные запятыми:'12,34,56'
@@ -33,7 +42,7 @@ const strNum = "12,34,56";
 const sumStrNum = strNum.split(',').reduce((accumulator,currentValue) => {
     return accumulator + parseInt(currentValue);
 }, 0)
-console.log(sumStrNum)
+// console.log(sumStrNum)
 
 
 
@@ -59,4 +68,4 @@ let dateObject  = {
     day:day
 }
 
-console.log(dateObject)
+// console.log(dateObject)

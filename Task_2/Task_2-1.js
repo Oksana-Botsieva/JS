@@ -1,6 +1,9 @@
 // Задача 2.1.1
 // Дана некоторая строка. Найдите позицию первого нуля в строке.
+const str = '1010110'
 
+const indStr = str.indexOf("0");
+console.log(indStr)
 
 // Задача 2.1.2
 // Выведите в консоль все числа в промежутке от 1 до 1000, сумма первой и второй цифры которых равна пяти.
@@ -35,6 +38,12 @@ console.log(arr);
 let array = [1, 2, 3, 4, 5, 6];
 let arrayLength = Math.ceil(array.length / 2);
 
+
+const firstHalfSum = array.slice(0, arrayLength).reduce((acc, cur) => {
+    return acc + cur;
+});
+
+/*
 let sum = array.reduce((accumulator, currentValue, currentIndex) => {
     if (currentIndex < arrayLength) {
         return accumulator + currentValue;
@@ -42,6 +51,7 @@ let sum = array.reduce((accumulator, currentValue, currentIndex) => {
         return accumulator;
     }
 },0)
+*/
 
-console.log(sum);
+console.log(firstHalfSum);
 

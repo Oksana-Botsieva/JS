@@ -31,9 +31,9 @@ const arrNum = String(num).split('')
 
 let numbers = 12345
 
-const numReverse = String(numbers).split('').reverse().join('');
+const numReverse = + String(numbers).split('').reverse().join('');
 
-// console.log(numReverse)
+console.log(numReverse)
 
 
 // Задача 1.7.4
@@ -42,10 +42,10 @@ const numReverse = String(numbers).split('').reverse().join('');
     12345
 Найдите сумму цифр этого числа.*/
 
-let nums = 12345;
+let nums = 555;
 
 const sumNum = String(nums).split('').reduce((accumulator, currentValue) => {
-    return accumulator + parseInt(currentValue, 10);
+    return accumulator + +currentValue ;
 }, 0);
 
-// console.log(sumNum)
+console.log(sumNum)

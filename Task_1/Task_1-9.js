@@ -8,7 +8,7 @@ const filteredArray = array.filter(function(element) {
     return element.startsWith(prefix);
 });
 
-// console.log(filteredArray);
+console.log(filteredArray);
 
 
 // Задача 1.9.2

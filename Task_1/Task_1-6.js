@@ -3,20 +3,25 @@
 // Дан массив с числами. Найдите сумму квадратов элементов этого массива.
 let numbers = [1,5,5,28,15];
 
-const sumSquareNum = numbers.map(num => num * num).reduce((accumulator, currentValue) => {
-    return accumulator + currentValue;
-}, 0);
+const result = sumOfSquares(numbers);
+function sumOfSquares(numbers) {
+    return numbers.reduce((sum, num) => sum + num * num, 0);
+}
+
+console.log(result)
+
 
 // console.log(sumSquareNum);
 
 // Задача 1.6.2
 // Дан массив с числами. Найдите сумму квадратных корней элементов этого массива.
 
-const sumRootNum = numbers.map(num => Math.sqrt(num)).reduce((accumulator, currentValue) => {
-     return accumulator + currentValue;
-}, 0) ;
+const sumRootNum = numbers.reduce((accumulator, currentValue) => {
+    const root = Math.sqrt(currentValue);
+    return accumulator + root;
+}, 0);
 
-// console.log(sumRootNum)
+console.log(sumRootNum)
 
 
 // Задача 1.6.3

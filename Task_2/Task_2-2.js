@@ -15,14 +15,16 @@ for (i = 0; i < arrNum.length; i ++) {
 // Задача 2.2.2;
 // Дан массив с числами. Оставьте в нем только положительные числа.
 
-let arrNumPositive = []
+const numbers = [-1, 2, -3, 4, -5, 6];
 
-for (i = 0; i < arrNum.length; i ++) {
- if (arrNum[i] >= 0) {
-  arrNumPositive.push(arrNum[i])
+numbers.forEach((num, index) => {
+ if (num <= 0) {
+  numbers.splice(index, 1);
  }
-}
-// console.log(arrNumPositive)
+});
+
+console.log(numbers);
+
 
 // Задача 2.2.3;
 // Дана строка. Удалите предпоследний символ из этой строки.
