@@ -5,10 +5,10 @@ let arrNumber = [];
 let length = 100;
 
 for (let i = 0; i< length; i++) {
-    let random = Math.random() * 100;
+    let random = Math.ceil(Math.random() * 100);
     arrNumber.push(random);
 }
-// console.log(arrNumber)
+console.log(arrNumber)
 
 
 // Задача 1.10.2
