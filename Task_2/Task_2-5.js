@@ -60,6 +60,7 @@ function sumDivision (arr) {
         }
     })
 
+
     return evenNum / oddNum;
 }
 
